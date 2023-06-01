@@ -1,5 +1,20 @@
-#sekcija{
-    background-color: yellowgreen;
-    font-size: 45px;
-    width: 400px;
+.flex-box{
+    display: flex;
+    width: 600px;
+    flex-wrap:nowrap;
+    justify-content:center;
+    background-color: antiquewhite;
+    height: 300px;
+    flex-direction:row;
+    align-items: center;
+}
+
+.element{
+    width: 150px;
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: red;
+    height: 50px;
+    
 }
