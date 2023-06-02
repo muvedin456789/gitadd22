@@ -22,6 +22,25 @@ body{
 .desna-strana{
     flex-grow: 1;
     height: 100%;
+    padding: 25px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+      
+}
+.desna-strana-gornji-dio{
+    height: 50px;
+    width: 100%;
+}
+
+.desna-strana-srednji-dio{
+    flex-grow: 1;
+    width: 100%;
+}
+
+.desna-strana-donji-dio{
+    height: 50px;
+    width: 100%;
 }
 
 
