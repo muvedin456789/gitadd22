@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.korijen{
+    height: 100%;
+    display: flex;
+}
+
+.lijeva-strana{
+    width: 300px;
+    height: 100%;
+    background-color: white;
+}
+
+.desna-strana{
+    flex-grow: 1;
+    height: 100%;
+}
+
+
+.lijeva-strana-gornji{
+    /* margin: 10px; */
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    font-weight: bold;
+}
+.donji{
+    height: 50% ;
+    width: 100%;
+    background-color:thistle;
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    
+}
