@@ -17,6 +17,7 @@ body{
     width: 300px;
     height: 100%;
     background-color: white;
+
 }
 
 .desna-strana{
@@ -26,21 +27,53 @@ body{
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+
+    
       
+}
+.desna-strana-srednji-dio-lijevo{
+    width: 50%;
+    height: 100%;
+    color: rgb(13, 215, 30);
+    display: flex; 
+    align-items: center;
+   
+}
+
+.desna-strana-srednji-dio-desno{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 200px;
 }
 .desna-strana-gornji-dio{
     height: 50px;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.menu-dugme{
+    width: 100px;
+    background-color: white;
+    color: black;
+    border-radius: 50% ;
 }
 
 .desna-strana-srednji-dio{
     flex-grow: 1;
     width: 100%;
+    display: flex;
+  
 }
 
 .desna-strana-donji-dio{
     height: 50px;
     width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -72,4 +105,13 @@ body{
     font-weight: bold;
     font-style: italic;
     
+}
+.ikonfb{
+    width: 50px;
+    height: 50px ;
+}
+
+.ikonefb{
+    display: flex;
+    gap: 20px;
 }
