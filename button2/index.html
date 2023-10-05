@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 2 submit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .root {
+            display: flex;
+            max-width: 1250px;
+            gap: 50px;
+            margin: auto;
+            flex-wrap: wrap;
+            row-gap: 100px;
+
+        }
+
+        .tile {
+            
+            max-width: 200px;
+            border: 1px solid violet;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgb(171, 164, 164);
+
+        }
+
+        .tile-slika {
+            height: 200px;
+            background-image: url(placeholder-image.png);
+            background-color: skyblue;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .tile-text {
+            font-size: 20px;
+            margin: 6px 50px;
+        }
+
+        .img {
+            width: 200px;
+            height: 150px;
+            background-color: skyblue;
+        }
+
+        .korjen {            
+            display: block;
+            padding: 10px;            
+            font-size: 30px;
+            
+        }
+
+        @media screen and (min-width:0px) and (max-width:768px) {
+            body {
+                text-align: center;
+                background-color: white;
+
+                .tile {
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+
+            .korjen {
+                text-align: center;
+                
+            }
+
+            .root {
+                text-align: center;
+
+            }
+
+        }
+
+        @media screen and (min-width:769px) and (max-width:1025px) {
+
+           
+
+            .root {
+                flex-wrap: wrap;
+            }
+
+            .korjen {
+                text-align: left;
+                color: black;
+            }
+
+        }
+
+        @media screen and (min-width:1025px) and (max-width:2000px) {
+            body {
+                background-color: gray;
+                /* margin: auto; */
+            }    
+            
+            .root{
+                max-width: 2000px;
+                
+            }
+          
+            .korjen {
+                text-align: left;
+                color: black;
+            }
+
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="korjen">Gallery Heading </div>
+    <div class="root">
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <div class="tile">
+            <div class="tile-slika"></div>
+            <div class="tile-text">Image Title</div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi is ex dolorem error minima quia
+            nobis odit repudiandae ea fuga corrupti facilis a! Voluptatem cum dolores laborum asperiores. Reiciendis
+            nihil temporibus corrupti ducimus! Vitae possimus aut earum repellat libero debitis officia praesentium
+            voluptate reiciendis, cum odit mollitia, sit nulla quo est. Excepturi, suscipit minus delectus inventore
+            adipisci id, ex laborum expedita ea consequatur non, impedit quibusdam nihil. Harum quisquam quam eos
+            architecto sunt, rem dolorum laboriosam deserunt, reprehenderit necessitatibus amet aspernatur officiis,
+            asperiores dolor nam modi. Consequatur quam esse corrupti assumenda neque quos doloribus vel dignissimos
+            animi accusantium, maxime porro tenetur quas omnis? Assumenda in veniam ut eveniet! Optio minima tempore
+            consequuntur dolor asperiores ut nisi iure vero, iste, unde iusto soluta odit enim saepe pariatur
+            perferendis debitis. Odit aut iusto sit cupiditate adipisci, voluptatem non commodi voluptatibus tempora
+            eos. Enim dolorem laboriosam provident, earum corporis rerum.</p>
+
+    </div>
+</body>
+
+</html>
