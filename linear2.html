@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ZadatAK.2..22</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            position: relative;
+            animation: rotateClockwise 1.4s linear infinite;
+            /* box-shadow: 0 0 20px rgba(0, 255, 0, 0.6), 0 0 50px rgba(0, 0, 255, 0.3);  */
+            box-shadow: 0 0 20px #fb5dad, 0 0 20px #55fb9f, 0 0 20px #b97aff;
+        }
+
+        .circle::after {
+            content: "";
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: black;
+            /* Boja unutarnje supljine */
+            position: absolute;
+            top: 20px;
+            /* Prilagodite kako biste postigli željenu veličinu unutarnje praznine */
+            left: 20px;
+            /* Prilagodite kako biste postigli željenu veličinu unutarnje praznine */
+        }
+
+
+        .circle-container {
+            position: relative;
+        }
+
+        .shine {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0, 0, 255, 0) 30%, rgba(0, 0, 255, 0.6));
+            animation: shineAnimation 0.9s linear infinite;
+        }
+
+        .shadow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.1));
+            animation: shineAnimation 0.9s linear infinite, rotateClockwise 1.4s linear infinite;
+            box-shadow: 0 0 20px #fb5dad, 0 0 20px #55fb9f, 0 0 20px #b97aff;
+        }
+
+
+
+        @keyframes shineAnimation {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1.0);
+            }
+
+            100% {
+                transform: scale(1.0);
+            }
+        }
+
+        @keyframes rotateClockwise {
+            0% {
+                transform: rotate(0deg);
+                /* Početna rotacija */
+            }
+
+            100% {
+                transform: rotate(360deg);
+                /* Krajnja rotacija, 360 stepeni (kazaljka na satu) */
+            }
+        }
+
+        @keyframes rotateClockwise {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle-container">
+
+        <div class="circle"></div>
+        <div class="shine"></div>
+        <div class="shadow"></div>
+    </div>
+</body>
+
+</html>
